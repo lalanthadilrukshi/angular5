@@ -1,0 +1,25 @@
+
+<!-- https://www.youtube.com/watch?v=RAmZ76pLNdE-->
+<!-- Angular project tutorial #5 Sign-Up Form for Seller | Form in E-commerce Project-->
+<div class="auth">
+<div class="sign-up">
+<h1>Sign Up</h1>
+<form #personSignUp="ngForm" (ngSubmit)="signUp(personSignUp.value)" class="common-form"> <!--id or name is #personSignUp . if you get an erro here add FormsModule to app.module.ts -->
+    <!--the event is ngSubmit  personSignUp.value is the parameter passed-->
+    <input
+     type="text"
+      class="form-input"
+       placeholder="Enter Name"
+        name="name"
+        ngModel 
+        /><!--ngModel  - add this to get values from input fields -->
+    <input type="password" class="form-input" placeholder="Enter Password" name="password"
+    ngModel 
+    /><!--ngModel  - add this to get values from input fields -->
+    <input type="text" class="form-input" placeholder="Enter Email" name="email" 
+    ngModel 
+    /><!--ngModel  - add this to get values from input fields -->
+    <button class="form-button">Sign Up</button>
+ </form>
+</div>
+</div>
